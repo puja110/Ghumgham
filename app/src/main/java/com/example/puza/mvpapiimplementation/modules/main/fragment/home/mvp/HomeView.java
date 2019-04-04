@@ -28,7 +28,7 @@ import com.example.puza.mvpapiimplementation.modules.main.activities.profile.ada
 import com.example.puza.mvpapiimplementation.modules.main.fragment.home.adapter.HistoricalPlaceAdapter;
 import com.example.puza.mvpapiimplementation.modules.main.fragment.home.adapter.PopularAdapter;
 import com.example.puza.mvpapiimplementation.modules.main.fragment.home.adapter.TopAdapter;
-import com.example.puza.mvpapiimplementation.modules.main.fragment.home.ui.FullScreenActivity;
+import com.example.puza.mvpapiimplementation.modules.main.fragment.home.ui.fullScreenActivity.FullScreenActivity;
 import com.google.gson.Gson;
 
 import java.util.ArrayList;

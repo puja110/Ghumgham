@@ -26,7 +26,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".modules.main.fragment.home.ui.FullScreenActivity" />
+        <activity android:name=".modules.main.fragment.home.ui.fullScreenActivity.FullScreenActivity" />
         <activity
             android:name=".modules.main.activities.popularPlacesList.PopularPlacesListActivity"
             android:label="Popular Places List" />

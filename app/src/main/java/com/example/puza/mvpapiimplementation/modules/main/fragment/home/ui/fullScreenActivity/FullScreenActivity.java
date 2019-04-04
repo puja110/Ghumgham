@@ -1,4 +1,4 @@
-package com.example.puza.mvpapiimplementation.modules.main.fragment.home.ui;
+package com.example.puza.mvpapiimplementation.modules.main.fragment.home.ui.fullScreenActivity;
 
 import android.app.Activity;
 import android.content.Intent;
