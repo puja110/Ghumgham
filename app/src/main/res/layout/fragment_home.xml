@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:overScrollMode="never">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gradient_background">
+
+                <RelativeLayout
+                    android:id="@+id/search_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"
+                    android:focusableInTouchMode="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:background="@color/colorPrimary">
+
+                    <EditText
+                        android:id="@+id/search"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:hint="Search Location / Service"
+                        android:textSize="12sp"
+                        android:drawablePadding="0dp"
+                        android:drawableLeft="@drawable/ic_action_search"
+                        android:background="@android:color/white"/>z
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <android.support.design.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:id="@+id/lin"
+                    android:layout_width="match_parent"
+                    android:layout_height="105dp"
+                    android:background="@drawable/gradient_background"
+                    android:orientation="horizontal">
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relative_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:layout_margin="5dp"
+                    app:layout_anchor="@+id/lin"
+                    app:layout_anchorGravity="center_horizontal|top">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.daimajia.slider.library.SliderLayout
+                            android:id="@+id/sliderView"
+                            android:background="@android:color/white"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+
+                    </FrameLayout>
+
+                    <LinearLayout
+                        android:id="@+id/pagesContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_gravity="bottom"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"/>
+
+                </RelativeLayout>
+
+            </android.support.design.widget.CoordinatorLayout>
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/layout_two"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:focusable="false"-->
+                <!--android:background="#f7f7f7"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:focusableInTouchMode="true">-->
+
+                <!--<EditText-->
+                    <!--android:id="@+id/searchBar"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="42dp"-->
+                    <!--android:hint="Search Location / Service"-->
+                    <!--android:textSize="14dp"-->
+                    <!--android:padding="5dp"-->
+                    <!--android:layout_margin="10dp"-->
+                    <!--android:fontFamily="@font/roboto_regular"-->
+                    <!--android:drawableTint="@android:color/darker_gray"-->
+                    <!--android:drawableLeft="@drawable/ic_action_search"-->
+                    <!--android:background="@android:color/white"/>-->
+
+            <!--</RelativeLayout>-->
+
+            <LinearLayout
+                android:id="@+id/layout_five"
+                android:layout_below="@+id/layout_four"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="17dp">
+
+                <TextView
+                    android:id="@+id/textview_featured"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@android:color/black"
+                    android:text="Popular places"
+                    android:textSize="14dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/see_all_popular_list"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:text="See all"
+                    android:gravity="end"
+                    android:textSize="14dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <!--<ScrollView android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:overScrollMode="never"-->
+                <!--xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/layout_six"-->
+                    <!--android:layout_below="@id/layout_five"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:orientation="horizontal"-->
+                    <!--android:background="#f1f1f1">-->
+
+                    <!--<android.support.v7.widget.RecyclerView-->
+                        <!--android:id="@+id/recentRecyclerView"-->
+                        <!--android:layout_below="@+id/layout_five"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:nestedScrollingEnabled="false">-->
+
+                    <!--</android.support.v7.widget.RecyclerView>-->
+                <!--</LinearLayout>-->
+            <!--</ScrollView>-->
+
+            <LinearLayout
+                android:id="@+id/layout_six"
+                android:layout_below="@id/layout_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#f7f7f7">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/popularPlacesRecyclerView"
+                    android:layout_below="@+id/layout_five"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    android:nestedScrollingEnabled="false">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/titleTopLayout"
+                android:layout_below="@+id/layout_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="17dp">
+
+                <TextView
+                    android:id="@+id/textviewTopPlaces"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@android:color/black"
+                    android:text="Top places"
+                    android:textSize="14dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/see_all_top_list"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:text="See all"
+                    android:gravity="end"
+                    android:textSize="14dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_seven"
+                android:layout_below="@id/titleTopLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#f7f7f7">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/topPlacesRecyclerView"
+                    android:layout_below="@+id/layout_five"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    android:nestedScrollingEnabled="false">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:nestedScrollingEnabled="false"
+                android:clipToPadding="false"
+                android:id="@+id/recyclerStaggered">
+
+            </android.support.v7.widget.RecyclerView>
+
+            <LinearLayout
+                android:layout_below="@+id/layout_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="17dp">
+
+                <TextView
+                    android:id="@+id/textviewLikesPlaces"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textColor="@android:color/black"
+                    android:text="Favorite places"
+                    android:textSize="14dp"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:id="@+id/see_all_likes_list"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorPrimary"
+                    android:text="See all"
+                    android:gravity="end"
+                    android:textSize="14dp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="#f7f7f7">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/likesHomePlacesRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:overScrollMode="never"
+                    android:nestedScrollingEnabled="false">
+
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

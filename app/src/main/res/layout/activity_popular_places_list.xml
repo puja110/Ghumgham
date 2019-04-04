@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".modules.main.activities.popularPlacesList.PopularPlacesListActivity">
+
+    <include layout="@layout/custom_toolbar" />
+
+    <LinearLayout
+        android:id="@+id/layout_five"
+        android:layout_below="@+id/layout_four"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="17dp">
+
+        <TextView
+            android:id="@+id/textview_featured"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@android:color/black"
+            android:text="Popular places"
+            android:textSize="14dp"
+            android:textStyle="bold"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/see_all_three"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:fontFamily="@font/roboto_regular"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textColor="@color/colorPrimary"-->
+            <!--android:text="See all"-->
+            <!--android:gravity="end"-->
+            <!--android:textSize="14dp"-->
+            <!--android:textStyle="bold"/>-->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_six"
+        android:layout_below="@id/layout_five"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="2.5dp"
+        android:layout_marginBottom="2.5dp">
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/swiperefresh"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/popularPlacesListRecyclerView"
+                android:layout_below="@+id/layout_five"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:overScrollMode="never"
+                android:nestedScrollingEnabled="false">
+
+            </android.support.v7.widget.RecyclerView>
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <!--<ProgressBar-->
+        <!--android:id="@+id/progressBar"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:paddingBottom="0dp"-->
+        <!--/>-->
+
+</LinearLayout>

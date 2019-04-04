@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".modules.main.activities.reviewAndCall.activity.writeReview.WriteReviewActivity">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="45dp">
+
+        <TextView
+            android:id="@+id/customer"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:text="Boudhanath Stupa"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_regular"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Kathmandu"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:fontFamily="@font/roboto_regular"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_below="@id/linear1"
+        android:layout_width="200dp"
+        android:layout_height="0.5dp"
+        android:background="#dadada"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_below="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_margin="40dp">
+
+        <TextView
+            android:id="@+id/star"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Rate this place"
+            android:textColor="@android:color/black"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="@font/roboto_regular"/>
+
+        <RatingBar
+            android:id="@+id/rating"
+            style="?android:attr/ratingBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="1.6"
+            android:numStars="5"
+            android:rating="2"
+            android:stepSize="1"
+            android:progressTint="@color/colorAccent"
+            android:theme="@style/RatingBar"/>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_below="@id/linear2"
+        android:layout_width="200dp"
+        android:layout_height="0.5dp"
+        android:background="#dadada"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:id="@+id/linear3"
+        android:layout_below="@id/view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="Write a review"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:layout_marginBottom="7dp"
+            android:fontFamily="@font/roboto_regular"/>
+
+        <EditText
+            android:id="@+id/body"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2.5"
+            android:hint="Inspire others with your words."
+            android:padding="15dp"
+            android:textSize="14sp"
+            android:background="@drawable/background_border_rectangle"
+            android:fontFamily="@font/roboto_regular"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/postReview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="10dp"
+        android:text="DONE"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>

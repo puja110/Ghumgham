@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.puza.mvpapiimplementation">
+
+    <!-- if you want to load images from the internet -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- if you want to load images from a file OR from the internet -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:name=".application.di.MainApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".modules.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".modules.main.fragment.home.ui.FullScreenActivity" />
+        <activity
+            android:name=".modules.main.activities.popularPlacesList.PopularPlacesListActivity"
+            android:label="Popular Places List" />
+        <activity android:name=".modules.main.activities.categoriesGrid.CategoriesGridActivity" />
+        <activity android:name=".modules.main.activities.categoriesGrid.tabs.toEatFragment.activity.GridOneActivity" />
+        <activity android:name=".modules.main.activities.categoriesGrid.tabs.toEatFragment.activity.GridTwoActivity" />
+        <activity android:name=".modules.main.activities.categoriesGrid.tabs.toEatFragment.activity.GridThreeActivity" />
+        <activity android:name=".modules.main.activities.categoriesGrid.tabs.toEatFragment.activity.GridFourActivity" />
+        <activity android:name=".modules.main.activities.reviewAndCall.ReviewAndCallActivity" />
+        <activity android:name=".modules.main.activities.reviewAndCall.activity.writeReview.WriteReviewActivity" />
+        <activity android:name=".modules.main.activities.reviewAndCall.activity.writeReview.activity.UserReviewActivity" />
+        <activity android:name=".modules.main.activities.placeListDetail.PlaceDetailsActivity" />
+        <activity android:name=".modules.main.activities.profile.ProfileActivity" />
+        <activity android:name=".modules.main.activities.setting.SettingActivity" />
+        <activity android:name=".modules.main.activities.profileEditor.ProfileEditorActivity" />
+        <activity android:name=".modules.main.fragment.home.ui.map.MapActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/reviewAndCallCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    app:cardElevation="2dp"
+    android:layout_marginTop="2.5dp"
+    android:layout_marginBottom="2.5dp"
+    android:clickable="true"
+    android:background="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="4dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/reviewPlaceImage"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:scaleType="fitXY"
+                android:src="@drawable/image"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/reviewPlaceName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:text="Swayambunath"
+                android:gravity="center_vertical"
+                android:textSize="14sp"
+                android:fontFamily="@font/roboto_regular"
+                android:textColor="#000"
+                android:paddingLeft="5dp"/>
+
+            <TextView
+                android:id="@+id/reviewPlaceDescription"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:maxLines="2"
+                android:fontFamily="@font/roboto_regular"
+                android:text="Historical Temple of Nepal. Historical Temple of Nepal. Historical Temple of Nepal. Historical Temple of Nepal. Historical Temple of Nepal. Historical Temple of Nepal. Historical Temple of Nepal Historical Temple of Nepal ..."
+                android:paddingLeft="5dp"
+                android:paddingRight="2dp"
+                android:paddingBottom="5dp"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#b0b0b0"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="2dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/reviewPersonImage"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:src="@drawable/image"
+                app:civ_border_color="@color/colorPrimary"
+                app:civ_border_width="1dp"/>
+
+            <TextView
+                android:id="@+id/reviewPersonName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:textSize="14sp"
+                android:text="Puja Shrestha"
+                android:paddingLeft="20dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"/>
+
+            <TextView
+                android:id="@+id/reviewRateNumber"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:textSize="12sp"
+                android:text="4"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"/>
+
+            <ImageView
+                android:id="@+id/reviewRate"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="0.8"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_action_like"
+                android:tint="@color/colorAccent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>
